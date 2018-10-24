@@ -1,0 +1,255 @@
+#lottery {
+    margin: 0 auto 20px;
+    overflow: hidden;
+    padding: 0 10px 5px 10px;
+    text-align: center;
+    background: #f8f8f8;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlM2UzZTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #f8f8f8 0%, #e3e3e3 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #e3e3e3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f8f8f8 0%, #e3e3e3 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f8f8f8 0%, #e3e3e3 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f8f8f8 0%, #e3e3e3 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f8f8f8 0%, #e3e3e3 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f8', endColorstr='#e3e3e3', GradientType=0); /* IE6-8 */
+    -webkit-box-shadow: inset 0 0 3px 1px #f8f8f8;
+    box-shadow: inset 0 0 3px 1px #f8f8f8;
+}
+
+#lottery .start {
+    background-color: #d3231f;
+    border: 0;
+    padding: 15px 40px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#lottery .start:hover {
+    background: #c31e1b
+}
+
+#lottery .start:disabled,
+#lottery .start:disabled:hover {
+    background-color: #dadada;
+    cursor: default;
+}
+
+.res {
+    display: block;
+    height: auto;
+    line-height: 20px;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.gift {
+    display: none !important;
+    background: #c1db34;
+    border: 0;
+    padding: 15px 40px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.gift:hover {
+    background: #c31e1b;
+}
+
+.gift.show {
+    display: inline-block !important;
+}
+
+.close-reveal-modal {
+    text-decoration: none;
+}
+
+#myModal3 input {
+    clear: both;
+    border: solid 1px #aaa;
+    line-height: 1.5em;
+    background-color: white;
+    padding: 3px 7px;
+    text-align: center;
+}
+
+.machineContainer {
+    padding: 5px 1px 5px 1px;
+    overflow: visible;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slotMachine {
+    width: 28%;
+    margin: 0 1.6%;
+    height: 158px;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.slotMachine .slots {
+    height: 158px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.machineResult {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+}
+
+.noBorder {
+    border: none !important;
+    background: transparent !important;
+}
+
+.wrapper #lottery {
+    background: transparent;
+    box-shadow: none;
+        overflow: visible;
+}
+
+.wrapper #lottery h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "MuseoSansLight", sans-serif;
+}
+
+.wrapper #lottery .gift_text {
+    font-size: 25px;
+    color: #fff;
+    line-height: 50px;
+    padding-left: 66px;
+    font-family: "MuseoSansLight", sans-serif;
+    display: inline-block;
+    background: url('/assets/img/slot_gift.png') no-repeat center left;
+    margin-bottom: 35px;
+}
+
+.wrapper .slotMachine .slots {
+    border-radius: 16px;
+    width: 158px;
+    background-color: #fff;
+    background-position: center;
+    background-size: 100px;
+    margin: 0 auto;
+}
+
+.wrapper .slotMachine .res {
+    color: #fff;
+}
+
+.wrapper #lottery .start,
+.wrapper #lottery .gift {
+    font-size: 16px;
+    color: #fff;
+    font-family: "MuseoSansBold", sans-serif;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    box-shadow: 3px 0 43px rgba(34, 30, 31, .35);
+    padding: 0 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: background 275ms, -webkit-transform 275ms;
+    transition: background 275ms, transform 275ms;
+    outline: none;
+    overflow: hidden;
+}
+
+.wrapper #lottery .gift:hover {
+    background: #b8ce3e;
+}
+
+.slots_bg {
+    padding: 40px 0 20px;
+    background: -moz-linear-gradient(left,rgba(131,201,45,.91) 0,#81c82d 1%,#189435 53%,#5db630 99%,rgba(95,183,48,.91) 100%);
+    background: -webkit-linear-gradient(left,rgba(131,201,45,.91) 0,#81c82d 1%,#189435 53%,#5db630 99%,rgba(95,183,48,.91) 100%);
+    background: linear-gradient(to right,rgba(131,201,45,.91) 0,#81c82d 1%,#189435 53%,#5db630 99%,rgba(95,183,48,.91) 100%);
+}
+
+@media (max-width: 736px) {
+    .wrapper .slotMachine .slots,
+    .wrapper .slotMachine {
+        width: 75px;
+        height: 75px;
+        background-size: 60px;
+        float: none;
+    }
+
+    .wrapper #lottery h2 {
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+    
+    .wrapper #lottery .gift_text {
+        font-size: 17px;
+        line-height: 28px;
+        box-sizing: border-box;
+        background-size: 30px;
+        padding-left: 40px;
+    }
+
+    .wrapper #lottery .start {
+        margin-bottom: 15px;
+    }
+    
+    .wrapper #lottery .slotMachineButton,
+    .wrapper #lottery .gift {
+        height: auto;
+        line-height: 14px;
+        padding: 12px 30px;
+        font-size: 11px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .slots_bg {
+        padding: 3rem 0;
+    }
+    
+    .wrapper #lottery {margin-bottom: 0;}
+    
+    .wrapper .slotMachine .slots, .wrapper .slotMachine {
+        overflow: hidden;
+        display: block;
+        width: 200px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media all and (max-width: 599px) {
+    .slotMachine {
+        float: left;
+        clear: both;
+        width: 100%;
+        margin: 0 0 10px
+    }
+
+    .slotMachine > div {
+        max-width: 250px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
